@@ -1,0 +1,26 @@
+Number of Members vs Casual users:
+select count (member_casual)
+from `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+group by member_casual
+order by member_casual
+
+
+Average rides Members vs Casual users:
+select member_casual,
+count (rideid) as total_rides
+from `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+group by member_casual
+order by member_casual
+
+Average time for Member vs Casual users:
+select member_casual,
+avg(start_at - end_at) as average_ride_time
+from `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+group by member_casual
+order by member_casual
+
+Number of rides a month:
+select start_at,
+extract(month from start_at) as month
+from `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+group by month,start_at
