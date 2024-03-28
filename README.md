@@ -40,7 +40,7 @@ This is my case study for the goggle analytics certificate
 
 ## Data Credibility
 
-- Cyclistic historical trip data is public data and is provided by Motivate International Inc. The data is of 12 months from 2023 and is in csv format
+- Cyclistic historical trip data is public data and is provided by Motivate International Inc. The data is of 12 months from 2023 and is in csv format the data sourse can be found here [https://divvy-tripdata.s3.amazonaws.com/index.html]
 
 ## Data Integrity
 
@@ -50,7 +50,7 @@ This is my case study for the goggle analytics certificate
 
 ## Keytasks
 
-- Download data and store it appropriately the data sourse can be found here [https://divvy-tripdata.s3.amazonaws.com/index.html]
+- Download data and store it appropriately 
 - Identify how it's organized
 
   
