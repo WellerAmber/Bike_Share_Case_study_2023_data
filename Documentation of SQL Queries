@@ -24,3 +24,12 @@ select start_at,
 extract(month from start_at) as month
 from `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
 group by month,start_at
+
+Most popular casual user start stations
+SELECT start_station_name,
+COUNT(start_station_name) AS top_casual
+FROM `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+WHERE member_casual = 'casual'
+GROUP BY start_station_name, member_casual
+ORDER BY top_casual DESC
+LIMIT 10;
