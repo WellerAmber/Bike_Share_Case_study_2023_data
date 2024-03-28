@@ -53,14 +53,27 @@ This is my case study for the goggle analytics certificate
 - Identify how it's organized
   
 # Process Phase
-
 - Clean the data and document changes
-  
-
 
 # Analize Phase
 
 # Share Phase
+
+- After looking into the number of members and the number of casual users we can see that there are more members then casual users
+
+![Member vs Casual Users](https://github.com/WellerAmber/Bike_Share_Case_study_2023_data/assets/164393629/4f9b55ab-e08c-40c5-8263-a4d4d5bf1444)
+
+- After looking into the number of rides per month we can see that users are more active during the summer months 
+![Rides Per Month](https://github.com/WellerAmber/Bike_Share_Case_study_2023_data/assets/164393629/f3f5b130-ef77-403c-b804-19d473717dd5)
+
+- After looking at the number of rides each user type does during the week we can see that Members use the bikes more during the week and Casual riders use the bikes more during the weekend
+
+![Sheet 1 (1)](https://github.com/WellerAmber/Bike_Share_Case_study_2023_data/assets/164393629/f6aa94fa-edd9-4550-add8-ad2e6dcdc293)
+
+-After looking into what type of bike is used the most we find that classic bikes are used most frequently 
+![Bike types](https://github.com/WellerAmber/Bike_Share_Case_study_2023_data/assets/164393629/08d90c06-884a-431c-a503-19242f46fdf8)
+
+
 
 # Act Phase
 
