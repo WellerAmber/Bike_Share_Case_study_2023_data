@@ -1,0 +1,99 @@
+Combining data:
+
+insert into `Months_of_year_2023.aggrigated_table` (rideId,rideable_type, start_at, end_at,start_station_name, start_station_Id, end_station_name, end_station_id, start_lat, start_lng, end_lat, end_lng, member_casual)
+select *
+from `Months_of_year_2023.January`
+union distinct
+select *
+from `Months_of_year_2023.Febuary`
+union distinct
+select *
+from `Months_of_year_2023.March`
+union distinct
+select *
+from `Months_of_year_2023.April`
+union distinct
+select *
+from `Months_of_year_2023.May`
+union distinct
+select *
+from `Months_of_year_2023.June`
+union distinct
+select *
+from `Months_of_year_2023.July`
+union distinct
+select *
+from `Months_of_year_2023.August`
+union distinct
+select *
+from `Months_of_year_2023.September`
+union distinct
+select *
+from `bike-share-case-study-418019.Months_of_year_2023.October `
+union distinct
+select *
+from `Months_of_year_2023.November`
+union distinct
+select *
+from `Months_of_year_2023.December`;
+
+Number of Rows:
+
+ select count (*)
+FROM `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+
+
+
+Creating table:
+
+create table Months_of_year_2023.aggrigated_table
+(rideId string, rideable_type string, start_at timestamp, end_at timestamp,start_station_name string,start_station_Id string, end_station_name string, end_station_id string, start_lat float64, start_lng float64, end_lat float64, end_lng float64, member_casual string)
+
+
+
+-Deleting null Values:
+
+DELETE
+FROM `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+where rideiD is null
+or
+rideable_type is null
+or
+start_at is null
+or
+end_at is null
+or
+start_station_name is null
+or
+start_station_id is null
+or
+end_station_name is null
+or
+end_station_id is null
+or
+start_lat is null
+or
+start_lng is null
+or
+end_lat is null
+or
+end_lng is null
+Or
+ member_casual is null
+Or
+ day_of_week is null
+
+
+Deleting inconsistent data for time:
+
+delete from `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+where start_at > end_at
+
+Number of rows after deleting Null values:
+
+select count (*)
+FROM `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+
+
+
+
