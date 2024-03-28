@@ -49,7 +49,14 @@ Creating table:
 create table Months_of_year_2023.aggrigated_table
 (rideId string, rideable_type string, start_at timestamp, end_at timestamp,start_station_name string,start_station_Id string, end_station_name string, end_station_id string, start_lat float64, start_lng float64, end_lat float64, end_lng float64, member_casual string)
 
+-Creating column for day_of_the_week:
 
+ALTER TABLE `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+ADD COLUMN day_of_week STRING;
+
+UPDATE `bike-share-case-study-418019.Months_of_year_2023.aggrigated_table`
+SET day_of_week = FORMAT_DATE('%A', start_at)
+WHERE TRUE;
 
 -Deleting null Values:
 
