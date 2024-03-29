@@ -26,7 +26,7 @@ This is my case study for the goggle analytics certificate
 - How do annual members and casual riders use Cyclistic bikes differently?
 
 ## Business Task
-- Analyze  the Cyclistic historical bike trip data to identify trends
+- Analyze the Cyclistic historical bike trip data to identify trends
 
 ## Key Stakeholders
 - Lily Morena: The director of marketing and manager
@@ -55,7 +55,7 @@ This is my case study for the goggle analytics certificate
 
   
 # Process Phase
-- Clean the data and document changes( documentation of changes can be found here[
+- Clean the data and document changes
 - I have decided due to this being a made up senerio that deleting the null values would be the best case for this scenerio. in a real world scenerio I would ask about the null values and determine if they need to be deleted, left in, or if we can figure out what those null values are.
  
 # Analize and Share 
@@ -88,10 +88,10 @@ Summary of data collected
 - Casual users ride longer duration but less frequently where members ride shorter duration but more frequently
 - Classic bikes are the most used bikes compared to electric and docked bikes
 - Most active months for users are from May though September
-- The most active areas for casual riders seems to be near popular turist attractions 
+- The most active areas for casual riders seems to be near popular tourist attractions 
 Recomendations: Consider adding perks/discount for members during the weekend
                 Consider adding perks/discount for summer months
-                Consider adding advertisments around popular turist areas
-                consider adding more adds during spring and summer months about membership
+                Consider adding advertisments around popular tourist areas
+                consider adding more ads during spring and summer months about membership
                 
 
